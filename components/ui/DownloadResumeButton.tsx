@@ -1,9 +1,10 @@
 import type { FC } from "react";
 import { Button } from "@chakra-ui/react";
+import { DownloadIcon } from "@chakra-ui/icons";
 
 const DownloadResumeButton: FC = () => {
 	return (
-		<Button colorScheme="green">
+		<Button colorScheme="green" className="space-x-2">
 			<a
 				href="/resume.pdf"
 				download="resume.pdf"
@@ -11,6 +12,7 @@ const DownloadResumeButton: FC = () => {
 			>
 				Download Resume
 			</a>
+			<DownloadIcon />
 		</Button>
 	);
 };
