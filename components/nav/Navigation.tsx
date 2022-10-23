@@ -1,7 +1,11 @@
-import type { FC } from "react";
+import type { FC, ReactNode } from "react";
 
-const Navigation: FC = () => {
-	return null;
+interface IProps {
+	children: ReactNode;
+}
+
+const Navigation: FC<IProps> = ({ children }) => {
+	return <nav>{children}</nav>;
 };
 
-export default Navigation
+export default Navigation;
