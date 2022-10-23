@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const Navigation: FC<IProps> = ({ children }) => {
-	return <nav className="mt-4">{children}</nav>;
+	return <nav className="space-x-4 mt-4">{children}</nav>;
 };
 
 export default Navigation;

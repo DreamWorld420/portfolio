@@ -5,7 +5,7 @@ import ViewProjectsButton from "../components/ui/ViewProjectsButton";
 
 const Homepage: NextPage = () => {
 	return (
-		<section className="flex flex-col h-screen">
+		<section className="flex flex-col grow">
 			<main className="grow flex flex-col justify-center space-y-4">
 				<Hero />
 				<div className="space-x-2">
