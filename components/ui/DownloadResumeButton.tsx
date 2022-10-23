@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Button } from "@chakra-ui/react";
 
-const DownloadResume: FC = () => {
+const DownloadResumeButton: FC = () => {
 	return (
 		<Button colorScheme="green">
 			<a
@@ -15,4 +15,4 @@ const DownloadResume: FC = () => {
 	);
 };
 
-export default DownloadResume;
+export default DownloadResumeButton;

@@ -6,7 +6,7 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider>
-			<PageLayout maxW="container.xl">
+			<PageLayout maxW="container.lg">
 				<Component {...pageProps} />
 			</PageLayout>
 		</ChakraProvider>
