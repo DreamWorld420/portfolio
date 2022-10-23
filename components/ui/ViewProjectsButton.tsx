@@ -5,9 +5,7 @@ import { Button } from "@chakra-ui/react";
 const ViewProjectsButton: FC = () => {
 	return (
 		<Link href="/projects">
-			<Button colorScheme="green" variant="outline">
-				View My Projects
-			</Button>
+			<Button colorScheme="green">View My Projects</Button>
 		</Link>
 	);
 };

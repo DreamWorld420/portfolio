@@ -4,7 +4,7 @@ import { DownloadIcon } from "@chakra-ui/icons";
 
 const DownloadResumeButton: FC = () => {
 	return (
-		<Button colorScheme="green" className="space-x-2">
+		<Button colorScheme="green" className="space-x-2" variant="outline">
 			<a
 				href="/resume.pdf"
 				download="resume.pdf"
