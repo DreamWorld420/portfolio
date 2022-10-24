@@ -15,8 +15,10 @@ function App({ Component, pageProps }: AppProps) {
 					<NavLink href="/">Home</NavLink>
 					<NavLink href="/projects">Work</NavLink>
 				</Navigation>
-				<SocialButtonGroup />
 				<Component {...pageProps} />
+				<footer className="mb-4 flex flex-row justify-end">
+					<SocialButtonGroup />
+				</footer>
 			</PageLayout>
 		</ChakraProvider>
 	);
