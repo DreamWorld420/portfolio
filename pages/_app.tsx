@@ -10,7 +10,10 @@ import SocialButtonGroup from "../components/ui/SocialButtonGroup";
 function App({ Component, pageProps }: AppProps) {
 	return (
 		<ChakraProvider theme={theme}>
-			<PageLayout maxW="container.lg" className="h-screen flex flex-col">
+			<PageLayout
+				maxW="container.lg"
+				className="h-screen flex flex-col justify-between"
+			>
 				<Navigation>
 					<NavLink href="/">Home</NavLink>
 					<NavLink href="/projects">Work</NavLink>
