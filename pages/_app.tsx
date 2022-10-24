@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import Navigation from "../components/nav/Navigation";
 import NavLink from "../components/nav/NavLink";
 import theme from "../theme";
+import SocialButtonGroup from "../components/ui/SocialButtonGroup";
 
 function App({ Component, pageProps }: AppProps) {
 	return (
@@ -14,6 +15,7 @@ function App({ Component, pageProps }: AppProps) {
 					<NavLink href="/">Home</NavLink>
 					<NavLink href="/projects">Work</NavLink>
 				</Navigation>
+				<SocialButtonGroup />
 				<Component {...pageProps} />
 			</PageLayout>
 		</ChakraProvider>
