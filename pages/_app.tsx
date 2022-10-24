@@ -4,10 +4,11 @@ import PageLayout from "../components/layout/PageLayout";
 import "../styles/globals.css";
 import Navigation from "../components/nav/Navigation";
 import NavLink from "../components/nav/NavLink";
+import theme from "../theme";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
 	return (
-		<ChakraProvider>
+		<ChakraProvider theme={theme}>
 			<PageLayout maxW="container.lg" className="h-screen flex flex-col">
 				<Navigation>
 					<NavLink href="/">Home</NavLink>
@@ -19,4 +20,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 	);
 }
 
-export default MyApp;
+export default App;
