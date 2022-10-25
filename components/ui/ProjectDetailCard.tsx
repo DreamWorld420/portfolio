@@ -1,17 +1,7 @@
 import type { FC, ReactNode, ReactElement } from "react";
-import {
-	IconButton,
-	Button,
-	Modal,
-	ModalOverlay,
-	ModalContent,
-	ModalHeader,
-	ModalFooter,
-	ModalBody,
-	ModalCloseButton,
-	useDisclosure,
-} from "@chakra-ui/react";
+import { IconButton, Button, useDisclosure } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import ProjectDetailModal from "./ProjectDetailModal";
 
 interface IProps {
 	title: string;
@@ -64,24 +54,13 @@ const ProjectDetailCard: FC<IProps> = ({
 				</Button>
 			</section>
 
-			{/* TODO: refactor modal into another component */}
-
-			<Modal isOpen={isOpen} onClose={onClose} isCentered>
-				<ModalOverlay />
-				<ModalContent className="font-openSans">
-					<ModalHeader className="font-robotoSlab">
-						{modalTitle}
-					</ModalHeader>
-					<ModalCloseButton />
-					<ModalBody>{modalBody}</ModalBody>
-
-					<ModalFooter>
-						<Button colorScheme="green" onClick={onClose}>
-							Close
-						</Button>
-					</ModalFooter>
-				</ModalContent>
-			</Modal>
+			<ProjectDetailModal
+				isOpen={isOpen}
+				onOpen={onOpen}
+				onClose={onClose}
+				modalTitle={modalTitle}
+				modalBody={modalBody}
+			/>
 		</>
 	);
 };
