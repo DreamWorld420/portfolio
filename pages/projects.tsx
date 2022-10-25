@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import ReactBadge from "../components/TechBadges/ReactBadge";
+import TailwindBadge from "../components/TechBadges/TailwindBadge";
 import Project from "../components/ui/Project";
 
 const Projects: NextPage = () => {
@@ -12,7 +13,10 @@ const Projects: NextPage = () => {
 				Austria via react."
 				position="Front-end developer"
 				duration="2 Months"
-				tags={[<ReactBadge key="react" />]}
+				tags={[
+					<ReactBadge key="react" />,
+					<TailwindBadge key="tailwindcss" />,
+				]}
 			>
 				Designed and developed a portfolio website for Triangle Studio,
 				a marketing studio based in austria. front-end is developed via
