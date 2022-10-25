@@ -30,8 +30,8 @@ const ProjectDetailModal: FC<IProps> = ({
 			<ModalOverlay />
 			<ModalContent className="font-openSans">
 				<ModalHeader className="font-robotoSlab flex md:flex-row flex-col items-center">
-					<h2 className="mr-2">{title}</h2>
-					<section className="font-robotoCondensed space-x-1 lowercase text-sm">
+					<h2 className="md:mr-1">{title}</h2>
+					<section className="font-robotoCondensed flex flex-wrap justify-center lowercase text-sm">
 						{tags}
 					</section>
 				</ModalHeader>

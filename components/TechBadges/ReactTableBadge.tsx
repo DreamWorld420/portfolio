@@ -5,12 +5,12 @@ interface IProps {
 	key: string | number;
 }
 
-const TailwindBadge: FC<IProps> = ({ key }) => {
+const ReactTableBadge: FC<IProps> = ({ key }) => {
 	return (
-		<TechBadge key={key} colorScheme="teal">
-			Tailwindcss
+		<TechBadge key={key} colorScheme="purple">
+			React-table
 		</TechBadge>
 	);
 };
 
-export default TailwindBadge;
+export default ReactTableBadge;

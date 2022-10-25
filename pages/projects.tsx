@@ -1,6 +1,9 @@
 import { NextPage } from "next";
 import ReactBadge from "../components/TechBadges/ReactBadge";
+import ReactQueryBadge from "../components/TechBadges/ReactQueryBadge";
+import ReactTableBadge from "../components/TechBadges/ReactTableBadge";
 import TailwindBadge from "../components/TechBadges/TailwindBadge";
+import TypescriptBadge from "../components/TechBadges/TypescriptBadge";
 import Project from "../components/ui/Project";
 
 const Projects: NextPage = () => {
@@ -16,6 +19,7 @@ const Projects: NextPage = () => {
 				tags={[
 					<ReactBadge key="react" />,
 					<TailwindBadge key="tailwindcss" />,
+					<ReactQueryBadge key="react-query" />,
 				]}
 			>
 				Designed and developed a portfolio website for Triangle Studio,
@@ -31,6 +35,9 @@ const Projects: NextPage = () => {
 				tags={[
 					<ReactBadge key="react" />,
 					<TailwindBadge key="tailwindcss" />,
+					<TypescriptBadge key="typescript" />,
+					<ReactQueryBadge key="react-query" />,
+					<ReactTableBadge key="react-table" />,
 				]}
 			>
 				Developed a client and a seller dashboard which a seller can
@@ -38,7 +45,7 @@ const Projects: NextPage = () => {
 				can take the order and complete it.
 			</Project>
 			<Project
-				title="Smurfy"
+				title="Smurfy.gg"
 				href="https://www.smurfy.gg/"
 				summary="an spa website developed via react to sell League of Legends accounts.	"
 				position="Front-end developer"
@@ -46,6 +53,9 @@ const Projects: NextPage = () => {
 				tags={[
 					<ReactBadge key="react" />,
 					<TailwindBadge key="tailwindcss" />,
+					<TypescriptBadge key="typescript" />,
+					<ReactQueryBadge key="react-query" />,
+					<ReactTableBadge key="react-table" />,
 				]}
 			>
 				Developed an spa website to sell League of Legends accounts.
