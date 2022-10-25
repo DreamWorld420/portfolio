@@ -6,7 +6,7 @@ interface IProps {
 	children: ReactNode;
 }
 
-const ModalBody: FC<IProps> = ({ position, duration, children }) => {
+const ProjectModalBody: FC<IProps> = ({ position, duration, children }) => {
 	return (
 		<section>
 			<header className="mb-6">
@@ -22,4 +22,4 @@ const ModalBody: FC<IProps> = ({ position, duration, children }) => {
 	);
 };
 
-export default ModalBody;
+export default ProjectModalBody;

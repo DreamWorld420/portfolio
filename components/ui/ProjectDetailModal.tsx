@@ -1,4 +1,4 @@
-import type { FC, ReactElement } from "react";
+import type { FC, ReactElement, ReactNode } from "react";
 import {
 	Modal,
 	ModalOverlay,
@@ -13,17 +13,16 @@ import {
 interface IProps {
 	isOpen: boolean;
 	onClose: () => void;
-	onOpen: () => void;
-	modalTitle: string;
-	modalBody: ReactElement;
-	tags: ReactElement[];
+	title: string;
+	tags?: ReactElement[];
+	children: ReactNode;
 }
 
 const ProjectDetailModal: FC<IProps> = ({
 	isOpen,
 	onClose,
-	modalTitle,
-	modalBody,
+	title,
+	children,
 	tags,
 }) => {
 	return (
@@ -31,13 +30,13 @@ const ProjectDetailModal: FC<IProps> = ({
 			<ModalOverlay />
 			<ModalContent className="font-openSans">
 				<ModalHeader className="font-robotoSlab flex items-center">
-					<h2 className="mr-2">{modalTitle}</h2>
+					<h2 className="mr-2">{title}</h2>
 					<section className="font-robotoCondensed space-x-1 lowercase text-sm">
 						{tags}
 					</section>
 				</ModalHeader>
 				<ModalCloseButton />
-				<ModalBody>{modalBody}</ModalBody>
+				<ModalBody>{children}</ModalBody>
 
 				<ModalFooter>
 					<Button colorScheme="green" onClick={onClose}>
