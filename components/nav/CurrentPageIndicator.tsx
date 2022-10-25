@@ -16,7 +16,7 @@ const animation = {
 const transition: Transition = {
 	repeat: Infinity,
 	repeatType: "reverse",
-	duration: 2,
+	duration: 1,
 };
 
 const CurrentPageIndicator: FC<IProps> = ({ pathName }) => {

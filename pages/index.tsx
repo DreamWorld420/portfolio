@@ -8,7 +8,7 @@ const Homepage: NextPage = () => {
 		<section className="flex flex-col grow">
 			<main className="grow flex flex-col justify-center space-y-4">
 				<Hero />
-				<div className="space-x-2">
+				<div className="md:space-x-2 flex-col space-y-2 md:space-y-0 flex md:flex-row">
 					<ViewProjectsButton />
 					<DownloadResumeButton />
 				</div>

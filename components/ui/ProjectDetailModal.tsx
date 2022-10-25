@@ -29,7 +29,7 @@ const ProjectDetailModal: FC<IProps> = ({
 		<Modal isOpen={isOpen} onClose={onClose} isCentered size="2xl">
 			<ModalOverlay />
 			<ModalContent className="font-openSans">
-				<ModalHeader className="font-robotoSlab flex items-center">
+				<ModalHeader className="font-robotoSlab flex md:flex-row flex-col items-center">
 					<h2 className="mr-2">{title}</h2>
 					<section className="font-robotoCondensed space-x-1 lowercase text-sm">
 						{tags}
