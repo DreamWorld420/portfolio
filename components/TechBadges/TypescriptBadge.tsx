@@ -7,7 +7,7 @@ interface IProps {
 
 const TypescriptBadge: FC<IProps> = ({ key }) => {
 	return (
-		<TechBadge key={key} colorScheme="blue">
+		<TechBadge key={key} colorScheme="cyan">
 			Typescript
 		</TechBadge>
 	);
