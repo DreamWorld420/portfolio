@@ -16,6 +16,7 @@ interface IProps {
 	onOpen: () => void;
 	modalTitle: string;
 	modalBody: ReactElement;
+	tags: ReactElement[];
 }
 
 const ProjectDetailModal: FC<IProps> = ({
@@ -23,13 +24,17 @@ const ProjectDetailModal: FC<IProps> = ({
 	onClose,
 	modalTitle,
 	modalBody,
+	tags,
 }) => {
 	return (
-		<Modal isOpen={isOpen} onClose={onClose} isCentered>
+		<Modal isOpen={isOpen} onClose={onClose} isCentered size="2xl">
 			<ModalOverlay />
 			<ModalContent className="font-openSans">
-				<ModalHeader className="font-robotoSlab">
-					{modalTitle}
+				<ModalHeader className="font-robotoSlab flex items-center">
+					<h2 className="mr-2">{modalTitle}</h2>
+					<section className="font-robotoCondensed space-x-1 lowercase text-sm">
+						{tags}
+					</section>
 				</ModalHeader>
 				<ModalCloseButton />
 				<ModalBody>{modalBody}</ModalBody>

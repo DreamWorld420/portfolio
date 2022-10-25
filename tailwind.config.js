@@ -9,6 +9,7 @@ module.exports = {
 			fontFamily: {
 				openSans: "'Open Sans', sans-serif",
 				robotoSlab: "'Roboto Slab', serif",
+				robotoCondensed: "'Roboto Condensed', sans-serif",
 			},
 		},
 	},

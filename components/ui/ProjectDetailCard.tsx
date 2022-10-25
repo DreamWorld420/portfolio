@@ -9,6 +9,7 @@ interface IProps {
 	href: string;
 	modalTitle: string;
 	modalBody: ReactElement;
+	tags: ReactElement[];
 }
 
 const ProjectDetailCard: FC<IProps> = ({
@@ -17,6 +18,7 @@ const ProjectDetailCard: FC<IProps> = ({
 	href,
 	modalTitle,
 	modalBody,
+	tags,
 }) => {
 	const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -53,13 +55,13 @@ const ProjectDetailCard: FC<IProps> = ({
 					More ...
 				</Button>
 			</section>
-
 			<ProjectDetailModal
 				isOpen={isOpen}
 				onOpen={onOpen}
 				onClose={onClose}
 				modalTitle={modalTitle}
 				modalBody={modalBody}
+				tags={tags}
 			/>
 		</>
 	);
