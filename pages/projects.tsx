@@ -27,8 +27,8 @@ const Projects: NextPage = () => {
 				react and tailwindcss.
 			</Project>
 			<Project
-				title="bhoc.ownedcore.com"
-				href="https://bhoc.ownedcore.com/"
+				title="BoostCore"
+				href="https://bc.ownedcore.com/"
 				summary="a client and a seller dashboard for a gaming forum to sell online gaming boosts."
 				position="Lead front-end developer"
 				duration="4 Months"
