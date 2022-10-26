@@ -6,7 +6,7 @@ const SocialButtonGroup: FC = () => {
 	return (
 		<div className="flex flex-row space-x-2">
 			<a
-				href="https://github.com/DreamWorld420"
+				href="https://github.com/DreamWorld420/"
 				target="_blank"
 				rel="noreferrer"
 			>
@@ -18,7 +18,7 @@ const SocialButtonGroup: FC = () => {
 				/>
 			</a>
 			<a
-				href="https://www.linkedin.com/in/kasra-bozorgmehr-43a178239"
+				href="https://www.linkedin.com/in/Kasra-Bozorgmehr/"
 				target="_blank"
 				rel="noreferrer"
 			>
