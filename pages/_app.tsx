@@ -18,6 +18,11 @@ function App({ Component, pageProps }: AppProps) {
 					name="description"
 					content="Kasra | DreamWorld420 portfolio website"
 				/>
+				<link
+					rel="preconnect"
+					href="https://fonts.gstatic.com/"
+					crossOrigin="anonymous"
+				/>
 
 				{/* facebook */}
 				<meta
